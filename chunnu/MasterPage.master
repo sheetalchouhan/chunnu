@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/RF.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body >
+  <form id="form1" runat="server" >
+        <table >
+            <tr>
+                <td>
+                    <div class="header">
+
+        <a href="#" class="logo">HoMeFiXiN</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+        <a style="--i:0;" href="index.aspx">home</a>
+        <a style="--i:1;" href="#feature">feature</a>
+        <a style="--i:2;" href="Services.aspx">service</a>
+        <a style="--i:3;" href="#project">project</a>
+        <a style="--i:4;" href="#team">team</a>
+        <a style="--i:5;" href="#price">price</a>
+        <a style="--i:6;" href="#contact">contact</a>
+    </nav>
+     </div>
+    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam eum in libero delectus sit reprehenderit velit similique! Ad, ea!.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">feature</a>
+            <a href="#">service</a>
+            <a href="#">project</a>
+            <a href="#">team</a>
+            <a href="#">price</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>category</h3>
+            <a href="#">digital marketing</a>
+            <a href="#">media marketing</a>
+            <a href="#">content marketing</a>
+            <a href="#">email marketing</a>
+            <a href="#">seo marketing</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> &copy; copyright by <a href="#"> mr. web designer </a> @ 2021 </h1>
+
+</div>
+                </td>
+            </tr>
+        </table>
+    </form>
+        </body>
+</html>
