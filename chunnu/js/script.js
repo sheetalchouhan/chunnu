@@ -12,17 +12,22 @@ window.onscroll = () => {
 }
 
 
-jQuery(function($){
- var $navbar = $(".header");
-$(window).scroll(function(event){
-    var $current =$(this).scrollTop();
-    if($current >0){
-        $navbar.addClass('navbar-color');
-    }else{
-        $navbar.removeClass('navbar-color');
-    }
+jQuery(function ($) {
+    var $navbar = $(".header");
+    $(window).scroll(function (event) {
+        var $current = $(this).scrollTop();
+        if ($current > 0) {
+            $navbar.addClass('navbar-color');
+        } else {
+            $navbar.removeClass('navbar-color');
+        }
+    });
 });
-});
+
+// Lorem ipsum dolor sit amet consectetur, adipisicing elit.Voluptatibus
+//  eum molestiae excepturi tenetur tempore repellat consectetur, corporis
+//  delectus minus ipsum ? Harum necessitatibus beatae reprehenderit non accusantium
+// \ soluta minima, itaque aspernatur!
 
 
 
